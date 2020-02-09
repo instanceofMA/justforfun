@@ -1,3 +1,3 @@
-module.export = function(str) {
+module.exports = function(str) {
   console.log("Printing: ", "'", str, "'");
 }
