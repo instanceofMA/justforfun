@@ -1,3 +1,5 @@
 const dep = require("./my-dependency");
-
-dep("hello");
+module.exports = (req, res) {
+  dep(`Request Body: ${req.body}`);
+  res.send("Request body printed.");
+}
